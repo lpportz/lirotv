@@ -1,0 +1,127 @@
+/* Geral */
+body {
+    background-image: url('img/Planodefundo.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    font-family: Arial, sans-serif; /* Fonte padrão para fácil leitura */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #333; /* Cor de fundo para o navbar */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Garante que o navbar fique acima de outros elementos */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Mantém o footer fixo na parte inferior da janela */
+    bottom: 0;
+    width: 100%; /* Garante que o footer ocupe toda a largura da página */
+    z-index: 1000; /* Garante que o footer esteja acima de outros elementos */
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content .logo {
+    position: absolute;
+    right: 20px; /* Ajusta a distância do logotipo em relação à direita */
+    bottom: 0;
+    width: 150px; /* Largura do logotipo */
+    height: auto;
+    z-index: 2; /* Coloca o logotipo acima do conteúdo do footer */
+    transform: translateY(20%); /* Ajusta a profundidade do logotipo */
+}
+
+/* Reduz o tamanho e ajusta a posição do logotipo em telas menores */
+@media (max-width: 768px) {
+    .footer-content .logo {
+        width: 100px;
+        bottom: calc(100% + 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content .logo {
+        width: 75px;
+        bottom: calc(100% + 15px);
+    }
+}
+
+/* Vídeo */
+.video-container {
+    position: relative;
+    margin-top: 60px; /* Espaço para o navbar */
+    margin-bottom: 60px; /* Espaço para o footer */
+    width: 100vw;
+    height: calc(100vh - 120px); /* Ajusta a altura do vídeo */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Convite */
+.invitation {
+    text-align: center;
+    padding: 20px;
+    background: #444; /* Cor de fundo para o convite */
+    color: #fff; /* Cor do texto */
+    position: relative;
+    margin: 0 auto;
+    width: 80%; /* Largura para melhor leitura */
+    max-width: 600px; /* Máxima largura para o convite */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    margin-bottom: 20px; /* Espaço para o botão abaixo do convite */
+}
+
+/* Botão */
+.button-container {
+    text-align: center;
+    margin-bottom: 80px; /* Margem maior para criar espaço entre o botão e o footer */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #fbc02d; /* Tom de amarelo */
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f9a825; /* Tom de amarelo mais escuro */
+}
