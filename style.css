@@ -1,6 +1,6 @@
 /* Geral */
 body {
-    background-image: url('https://i.imgur.com/NqABrta.png');
+    background-image: url('img/Planodefundo.png');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir o fundo */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     margin: 0;
@@ -234,4 +234,24 @@ footer {
         height: 100vh; /* Ajusta a altura do iframe */
         border: 0;
     }
+}
+/* Estilos para o contêiner do botão */
+#botao-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Garante que o botão fique sobre o vídeo */
+    display: none; /* Inicialmente escondido */
+}
+
+#meuBotao {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
